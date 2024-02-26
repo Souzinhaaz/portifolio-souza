@@ -111,7 +111,7 @@ header .title:hover {
 header .title > a {
     text-decoration: none;
     color: #fff;
-    font-size: 15px;
+    font-size: 20px;
     font-weight: 500;
     line-height: 10px;
 }
@@ -153,6 +153,60 @@ nav ul li a:hover {
 
 .opacity-nav {
     color: #fff;
+}
+
+.menu-mobile {
+    background-color: #0000008c;
+    backdrop-filter: blur(10px);
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-mobile .nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-mobile .nav {
+    width: 100%;
+}
+
+.menu-mobile .nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+
+.menu-mobile .nav ul li {    
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+.menu-mobile .nav ul li:hover {
+    background-color: #0000008c;
+    color: #fff;
+}
+
+
+@media screen and (max-width: 930px) {
+    .menu {
+        display: none;
+    }
+
+    .title {
+        width: 100%;
+    }
 }
 
 
